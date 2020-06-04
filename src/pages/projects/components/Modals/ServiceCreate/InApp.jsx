@@ -192,7 +192,7 @@ export default class ServiceCreateModal extends React.Component {
             isSubmitting={isSubmitting}
             onOk={onOk}
             onCancel={onCancel}
-            okBtnText={detail ? t('Update') : undefined}
+            okBtnText={!isEmpty(detail) ? t('Update') : t('Add')}
           />
         )
         break
