@@ -110,12 +110,11 @@ export default class SecretDataForm extends React.Component {
               )}
             >
               <TextArea
-                maxHeight={430}
-                autoResize
-                resize
                 name="value"
                 placeholder="value"
                 rows={4}
+                autoResize
+                resize
               />
             </Form.Item>
           </Form>
