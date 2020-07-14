@@ -34,6 +34,11 @@ export default class Annotations extends React.Component {
     data: {},
   }
 
+  keyFilter = key => {
+    const hiddenKeys = globals.config.preservedAnnotations
+    return !hiddenKeys.some(hiddenKey => new RegExp(hiddenKey).test(key))
+  }
+
   render() {
     const { className, data } = this.props
 
@@ -43,7 +48,7 @@ export default class Annotations extends React.Component {
       <Card className={className} title={t('Annotations')}>
         <ul className={styles.annotations}>
           {Object.keys(data)
-            .filter(key => !isEmpty(data[key]))
+            .filter(this.keyFilter)
             .map(key => (
               <li key={key}>
                 <Columns>
