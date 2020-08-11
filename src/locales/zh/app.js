@@ -47,7 +47,8 @@ export default {
   'Update Log': '更新日志',
   'No update log': '暂无更新日志',
   Note: '提示',
-  APP_NAME_DESC: '应用的重要标识',
+  APP_NAME_DESC:
+    '应用的重要标识, 最长 20 个字符，只能包含小写字母、数字及分隔符("-")，且必须以小写字母或数字开头及结尾',
   'Select file': '选择文件',
   'Application Name': '应用名称',
   'Application Version': '应用版本',

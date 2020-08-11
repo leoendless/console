@@ -47,7 +47,8 @@ export default {
   'Update Log': '更新紀錄',
   'No update log': '暫無更新紀錄',
   Note: '提示',
-  APP_NAME_DESC: '應用的重要商標',
+  APP_NAME_DESC:
+    '應用的重要商標，最長 20 個字元，只能包含小寫字母、數字及分隔符號("-")，且必須以小寫字母或數字開頭及結尾',
   'Select file': '選擇檔案',
   'Application Name': '應用名稱',
   'Application Version': '應用版本',

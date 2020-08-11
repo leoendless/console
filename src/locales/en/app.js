@@ -163,7 +163,8 @@ export default {
   APPS_CREATE_DESC:
     'KubeSphere provides lifecycle management of app templates. You can upload or create new app templates and test them quickly. In addition, you can publish your app templates to App Store so that other users can purchase and deploy them.',
 
-  APP_NAME_DESC: 'Important Identification of Applications',
+  APP_NAME_DESC:
+    'Important identification of the application, it can only contain lowercase letters, numbers and hyphens("-"), and must begin and end with a lowercase letter or a number. The maximum length of characters is set to 20.',
 
   APP_ABSTRACTION_DESC: 'A general introduction to applications',
 

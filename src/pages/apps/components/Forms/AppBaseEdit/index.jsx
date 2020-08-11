@@ -22,7 +22,7 @@ import { Input, Select, TextArea } from '@pitrix/lego-ui'
 import { find, last } from 'lodash'
 
 import { Form, Upload, Image, Button } from 'components/Base'
-import { PATTERN_URL } from 'utils/constants'
+import { PATTERN_URL, PATTERN_NAME } from 'utils/constants'
 import { UPLOAD_FILE_TYPES } from 'configs/openpitrix/app'
 
 import styles from './index.scss'
@@ -148,6 +148,7 @@ export default class AppBaseEdit extends React.Component {
                 required: true,
                 message: t('Please input an application name'),
               },
+              { pattern: PATTERN_NAME, message: `${t('Invalid name')}` },
             ]}
           >
             <Input
