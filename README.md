@@ -17,7 +17,7 @@ Read [the guide](https://github.com/kubesphere/kubesphere#to-start-using-kubesph
 
 Features Map:
 
-![Features Map](docs/images/module-map.jpg)
+![Features Map](docs/images/module-map-v3.1.0.jpg)
 
 ## Developer Guide
 
